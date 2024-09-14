@@ -20,6 +20,7 @@ body {
 #S1 {
   height: auto;
   width: 100%;
+  box-shadow: var(--ombreElement);
 }
 #primaryContainer {
   height: auto;
@@ -53,6 +54,8 @@ body {
 #S2 {
   height: auto;
   width: 100%;
+  overflow: hidden;
+  box-shadow: var(--ombreElement);
 }
 #secondaryContainer {
   height: auto;
@@ -61,10 +64,8 @@ body {
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-evenly;
-  overflow: hidden;
   background: url("images/mountainOne.png") no-repeat 50% 20%;
   background-size: 100%;
-  z-index: 99;
   overflow: hidden;
 }
 article {
@@ -74,7 +75,6 @@ article {
   flex-flow: row nowrap;
   align-items: flex-end;
   justify-content: space-between;
-  border: 1px solid red;
 }
 figure {
   height: auto;
@@ -83,7 +83,6 @@ figure {
   flex-flow: row nowrap;
   align-items: flex-end;
   justify-content: space-evenly;
-  border: 1px solid yellow;
 }
 figure > p {
   padding: 10px;
@@ -92,7 +91,7 @@ figure > p {
   color: rgba(255, 255, 255, 0.3);
   background: #1a1a1ab0;
   font-family: "Red Hat Display", sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   text-shadow: var(--textShadowblur);
   font-weight: 500;
   letter-spacing: 5px;
@@ -106,6 +105,22 @@ figure > picture > img {
   height: 100vh;
   width: 30vw;
 }
+/*Galerie image*/
+#imgContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #1a1a1ab0;
+}
+#imgContainer > img {
+  height: 25vh;
+  width: 25vw;
+}
+/*Galerie image fin*/
 /*****************************S2FIN*****************************************************************/
 /******↓↓↓RESPONSIVE SMARTPHONE↓↓↓******/
 @media only screen and (max-width: 767px) {

@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(ScrollTrigger);
   gsap.from(selection[0].chars, {
     //y: 50,
-    x: 50,
+    x: -50,
     //z: 50,
-    //duration: 3,
+    duration: 2,
     rotation: 90,
     opacity: 0,
     color: "rgb(13,13,13)",
@@ -26,7 +26,7 @@ const lenis = new Lenis();
 lenis.on("scroll", ScrollTrigger.update);
 
 gsap.ticker.add((time) => {
-  lenis.raf(time * 300);
+  lenis.raf(time * 400);
 });
 
 gsap.ticker.lagSmoothing(0);
