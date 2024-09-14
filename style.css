@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap");
 
 body {
   margin: 0;
@@ -8,6 +9,7 @@ body {
 }
 
 :root {
+  --asia: "Yuji Boku", serif;
   --standard: "Noto Sans", sans-serif;
   --ombreText: 0px 0px 8px #000;
   --ombreElement: 0px 0px 10px #000;
@@ -31,10 +33,9 @@ body {
 #primaryContainer > h1 {
   position: absolute;
   color: #fff;
-  font-family: var(--standard);
-  font-weight: 400;
-  font-size: 5rem;
-  mix-blend-mode: difference;
+  font-family: var(--asia);
+  font-weight: 500;
+  font-size: 6rem;
   text-shadow: var(--ombreText);
 }
 
@@ -63,6 +64,8 @@ body {
   overflow: hidden;
   background: url("images/mountainOne.png") no-repeat 50% 20%;
   background-size: 100%;
+  z-index: 99;
+  overflow: hidden;
 }
 article {
   height: auto;
@@ -70,7 +73,7 @@ article {
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-end;
-  justify-content: space-evenly;
+  justify-content: space-between;
   border: 1px solid red;
 }
 figure {
@@ -83,17 +86,23 @@ figure {
   border: 1px solid yellow;
 }
 figure > p {
+  padding: 10px;
   height: auto;
-  width: 45vw;
+  width: 60vw;
   color: rgba(255, 255, 255, 0.3);
-  background: #1a1a1a7c;
+  background: #1a1a1ab0;
   font-family: "Red Hat Display", sans-serif;
   font-size: 4rem;
   text-shadow: var(--textShadowblur);
   font-weight: 500;
   letter-spacing: 5px;
 }
+picture {
+  height: auto;
+  width: 100%;
+}
 figure > picture > img {
+  margin-left: 25vw;
   height: 100vh;
   width: 30vw;
 }

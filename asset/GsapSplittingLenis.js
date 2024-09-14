@@ -3,7 +3,10 @@ let selection = Splitting();
 document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(ScrollTrigger);
   gsap.from(selection[0].chars, {
-    y: 100,
+    //y: 50,
+    x: 50,
+    //z: 50,
+    //duration: 3,
     rotation: 90,
     opacity: 0,
     color: "rgb(13,13,13)",
@@ -12,7 +15,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       trigger: ".textOne",
       start: "top 50%",
       end: "bottom bottom",
-      markers: true,
+      //markers: true,
       scrub: true,
     },
   });
