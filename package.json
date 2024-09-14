@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "aos": "^2.3.4",
+    "gsap": "^3.12.5",
+    "rellax": "^1.12.1",
+    "splitting": "^1.1.0"
+  }
+}
