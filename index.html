@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -17,7 +20,7 @@
 <body>
     <main>
         <section id="S1">
-            <div id="primaryContainer">
+            <div id="primaryContainer" onscroll="scrollTitre()">
                 <video src="images/riverJapan.mp4" autoplay loop muted></video>
                 <img src="images/dragonOne.png" alt="dragonOne" />
                 <h1 class="firsttitle">Asia-Garden</h1>
@@ -36,28 +39,47 @@
                             reiciendis omnis deleniti beatae eveniet pariatur quidem
                             consequatur? Hic eligendi at, expedita nobis velit ipsum rem.
                         </p>
-                        <picture>
+                        <picture id="Pict1">
+                            <img src="images/lettre1.png" alt="lettre1" class="rellax" data-rellax-speed="4" />
+                            <img src="images/lettre3.png" alt="lettre3" class="rellax" data-rellax-speed="2" />
+                        </picture>
+                        <picture id="Pict2">
                             <img src="images/nipponSun.png" alt="sun" class="rellax" data-rellax-speed="-1" />
-                            <img src="images/warrior.png" alt="warrior" class="rellax" data-rellax-speed="5" />
+                            <img src="images/warrior.png" alt="warrior" class="rellax" data-rellax-speed="3" />
                         </picture>
                     </figure>
                 </article>
             </div>
             <div id="imgContainer">
-                <img data-aos="fade-up" data-aos-duration="900" src="images/garden1.jpg" alt="garden1">
-                <img data-aos="fade-up" data-aos-duration="1900" src="images/garden2.jpg" alt="garden2">
-                <img data-aos="fade-up" data-aos-duration="2900" src="images/garden3.jpg" alt="garden3">
+                <p class="textTwo">Lorem ipsum dolor sit.</p>
+                <img src="images/lettre2.png" alt="pagode" data-aos="fade-left" data-aos-duration="1200">
+                <div id="imgSubContainer">
+                    <img class="slideImg slideImg2" data-aos="fade-up" data-aos-duration="900" src="images/garden1.jpg"
+                        alt="garden1">
+                    <img class="slideImg slideImg2" data-aos="fade-up" data-aos-duration="1900" src="images/garden2.jpg"
+                        alt="garden2">
+                    <img class="slideImg slideImg2" data-aos="fade-up" data-aos-duration="2900" src="images/garden3.jpg"
+                        alt="garden3">
+                    <img class="slideImg slideImg2" data-aos="fade-up" data-aos-duration="900" src="images/garden4.jpg"
+                        alt="garden4">
+                    <img class="slideImg slideImg2" data-aos="fade-up" data-aos-duration="1900" src="images/garden5.jpg"
+                        alt="garden5">
+                    <img class="slideImg slideImg2" data-aos="fade-up" data-aos-duration="2900" src="images/garden6.jpg"
+                        alt="garden6">
+                </div>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <h3>©Script'Enjøyer</h3>
+        <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+    </footer>
     <!--↓↓↓ AOS Library ↓↓↓-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="asset/aosinit.js"></script>
     <!--↓↓↓ RellaxJs Parallax↓↓↓-->
     <script src="node_modules/rellax/rellax.min.js"></script>
     <script src="asset/apprellax.js"></script>
-    -->
     <!-- ↓↓↓lenisScroll↓↓↓ -->
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
     <!-- ↓↓↓GSAP↓↓↓ -->
@@ -67,6 +89,9 @@
     <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
     <script src="asset/GsapSplittingLenis.js"></script>
     <script src="asset/zoomGsap.js"></script>
+    <script src="asset/titlescale.js"></script>
+    <script src="asset/backgroundAnime.js"></script>
+    <script src="asset/gsapTextAnim.js"></script>
 </body>
 
 </html>

@@ -20,7 +20,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     },
   });
 });
-//script pour la compatibilité avec GSAP
+
+//lenis script pour la compatibilité avec GSAP
 const lenis = new Lenis();
 
 lenis.on("scroll", ScrollTrigger.update);
@@ -31,7 +32,7 @@ gsap.ticker.add((time) => {
 
 gsap.ticker.lagSmoothing(0);
 
-//script pour la compatibilité sans GSAP
+//lenis script pour la compatibilité sans GSAP
 
 // const lenis = new Lenis();
 

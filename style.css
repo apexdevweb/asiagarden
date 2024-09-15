@@ -15,9 +15,16 @@ body {
   --ombreElement: 0px 0px 10px #000;
   --textShadowblur: 0 0 15px rgba(255, 255, 255, 0.5),
     0 0 10px rgba(255, 255, 255, 0.5);
+  --background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+  --backgroundInverse: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgb(255, 255, 255)
+  );
 }
 /*****************************S1*****************************************************************/
 #S1 {
+  top: 0;
   height: auto;
   width: 100%;
   box-shadow: var(--ombreElement);
@@ -87,7 +94,7 @@ figure {
 figure > p {
   padding: 10px;
   height: auto;
-  width: 60vw;
+  width: 100%;
   color: rgba(255, 255, 255, 0.3);
   background: #1a1a1ab0;
   font-family: "Red Hat Display", sans-serif;
@@ -95,32 +102,93 @@ figure > p {
   text-shadow: var(--textShadowblur);
   font-weight: 500;
   letter-spacing: 5px;
+  overflow: hidden;
 }
 picture {
   height: auto;
   width: 100%;
 }
-figure > picture > img {
-  margin-left: 25vw;
-  height: 100vh;
+figure > #Pict1 > img {
+  /* margin-left: 25vw; */
+  top: 0;
+  height: 30vh;
+  width: 20vw;
+}
+figure > #Pict2 > img {
+  /* margin-left: 25vw; */
+  height: 70vh;
   width: 30vw;
 }
 /*Galerie image*/
 #imgContainer {
   display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 50vh;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+  height: 70vh;
   width: 100%;
+  background: url("images/dragonTwo.png") no-repeat;
+  padding: 0;
   overflow: hidden;
-  background-color: #1a1a1ab0;
+}
+#imgContainer > p {
+  padding-bottom: 5px;
+  height: 5.5vh;
+  width: auto;
+  color: rgba(255, 255, 255, 0.3);
+  background: #1a1a1ab0;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 3rem;
+  text-shadow: var(--textShadowblur);
+  font-weight: 500;
+  letter-spacing: 5px;
+  overflow: hidden;
 }
 #imgContainer > img {
   height: 25vh;
   width: 25vw;
 }
+#imgSubContainer {
+  position: absolute;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70vh;
+  width: 100%;
+  background: var(--background);
+  overflow: hidden;
+}
+#imgSubContainer > img {
+  height: 15vh;
+  width: 15vw;
+}
+#imgSubContainer > img:hover {
+  filter: contrast(140%);
+  box-shadow: var(--ombreElement);
+}
 /*Galerie image fin*/
+/*footer*/
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  background-color: #000;
+}
+footer > h3 {
+  font-family: var(--asia);
+  color: #fff;
+}
+footer > h4 {
+  font-family: var(--standard);
+  color: #fff;
+}
+/*footer fin*/
 /*****************************S2FIN*****************************************************************/
 /******↓↓↓RESPONSIVE SMARTPHONE↓↓↓******/
 @media only screen and (max-width: 767px) {
