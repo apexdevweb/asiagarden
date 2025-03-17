@@ -6,15 +6,15 @@ gsap.to(textA, {
   //z: 50,
   scale: 6,
   duration: 5,
-  //rotation: 90,
+  // rotation: 90,
   opacity: 1,
   stagger: 0.5,
   ease: "power2.inOut",
   scrollTrigger: {
     trigger: ".textTwo",
-    start: "top 35%",
+    start: "top 25%",
     end: "bottom 80%",
-    markers: true,
+    // markers: true,
     scrub: 3,
   },
 });

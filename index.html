@@ -10,10 +10,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
-    <link rel="icon" type="image/x-icon" href="image/dragonOne.png" />
+    <link rel="shortcut icon" href="images/dragonTwo.png" type="image/x-icon" />
     <title>Asia-Garden</title>
 </head>
 
@@ -40,8 +40,8 @@
                             consequatur? Hic eligendi at, expedita nobis velit ipsum rem.
                         </p>
                         <picture id="Pict1">
-                            <img src="images/lettre1.png" alt="lettre1" class="rellax" data-rellax-speed="4" />
-                            <img src="images/lettre3.png" alt="lettre3" class="rellax" data-rellax-speed="2" />
+                            <img src="images/lettre1.png" alt="lettre1" class="rellax" data-rellax-speed="5" />
+                            <img src="images/lettre3.png" alt="lettre3" class="rellax" data-rellax-speed="1" />
                         </picture>
                         <picture id="Pict2">
                             <img src="images/nipponSun.png" alt="sun" class="rellax" data-rellax-speed="-1" />
@@ -52,24 +52,67 @@
             </div>
             <div id="imgContainer">
                 <p class="textTwo">Lorem ipsum dolor sit.</p>
-                <img src="images/lettre2.png" alt="pagode" data-aos="fade-left" data-aos-duration="1200">
+                <!-- <img src="images/lettre2.png" alt="pagode" data-aos="fade-left" data-aos-duration="1200" /> -->
                 <div id="imgSubContainer">
-                    <img class="slideImg slideImg2" data-aos="fade-up" data-aos-duration="900" src="images/garden1.jpg"
-                        alt="garden1">
-                    <img class="slideImg slideImg2" data-aos="fade-up" data-aos-duration="1900" src="images/garden2.jpg"
-                        alt="garden2">
-                    <img class="slideImg slideImg2" data-aos="fade-up" data-aos-duration="2900" src="images/garden3.jpg"
-                        alt="garden3">
-                    <img class="slideImg slideImg2" data-aos="fade-up" data-aos-duration="900" src="images/garden4.jpg"
-                        alt="garden4">
-                    <img class="slideImg slideImg2" data-aos="fade-up" data-aos-duration="1900" src="images/garden5.jpg"
-                        alt="garden5">
-                    <img class="slideImg slideImg2" data-aos="fade-up" data-aos-duration="2900" src="images/garden6.jpg"
-                        alt="garden6">
+                    <img class="slideImg slideImg2 gardenModal" data-aos="fade-up" data-aos-duration="900"
+                        src="images/garden1.jpg" alt="garden1" />
+                    <img class="slideImg slideImg2 gardenModal" data-aos="fade-up" data-aos-duration="1900"
+                        src="images/garden2.jpg" alt="garden2" />
+                    <img class="slideImg slideImg2 gardenModal" data-aos="fade-up" data-aos-duration="2900"
+                        src="images/garden3.jpg" alt="garden3" />
+                    <img class="slideImg slideImg2 gardenModal" data-aos="fade-up" data-aos-duration="900"
+                        src="images/garden4.jpg" alt="garden4" />
+                    <img class="slideImg slideImg2 gardenModal" data-aos="fade-up" data-aos-duration="1900"
+                        src="images/garden5.jpg" alt="garden5" />
+                    <img class="slideImg slideImg2 gardenModal" data-aos="fade-up" data-aos-duration="2900"
+                        src="images/garden6.jpg" alt="garden6" />
+                    <img class="slideImg slideImg2 gardenModal" data-aos="fade-up" data-aos-duration="900"
+                        src="images/garden7.jpg" alt="garden6" />
+                    <img class="slideImg slideImg2 gardenModal" data-aos="fade-up" data-aos-duration="1900"
+                        src="images/garden8.jpg" alt="garden6" />
+                    <img class="slideImg slideImg2 gardenModal" data-aos="fade-up" data-aos-duration="2900"
+                        src="images/garden9.jpg" alt="garden6" />
+                    <img class="slideImg slideImg2 gardenModal" data-aos="fade-up" data-aos-duration="900"
+                        src="images/garden10.jpg" alt="garden6" />
+                    <img class="slideImg slideImg2 gardenModal" data-aos="fade-up" data-aos-duration="1900"
+                        src="images/garden11.jpg" alt="garden6" />
+                    <img class="slideImg slideImg2 gardenModal" data-aos="fade-up" data-aos-duration="2900"
+                        src="images/garden12.jpg" alt="garden6" />
+                </div>
+                <div id="myModal" class="modal">
+                    <!--boutton close-->
+                    <span class="close">&times;</span>
+                    <!-- Modal Contenue (l'Image) -->
+                    <img class="modal-content" id="img01" />
+                    <!-- Modal Caption (légende d'image) -->
+                    <div id="caption"></div>
                 </div>
             </div>
         </section>
+        <section id="S3">
+            <div class="wrapper">
+                <article class="article__S3">
+                    <hgroup class="article__titre--container">
+                        <h4><span>L</span>orem ipsum</h4>
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                    </hgroup>
+                    <blockquote class="article__txt">
+                        <p class="text__article">
+                            Lorem ipsum dolor sit amet <strong>consectetur</strong>,
+                            adipisicing elit.
+                            <cite>Laudantium</cite>
+                            minus sed distinctio facere sunt itaque!
+                        </p>
+                    </blockquote>
+                    <figure class="article__fig">
+                        <img src="images/asiaFace3.jpg" alt="myImg" />
+                        <figcaption><small>Lorem ipsum dolor sit amet consectetur</small></figcaption>
+                    </figure>
+                </article>
+            </div>
+        </section>
     </main>
+    <br />
     <footer>
         <h3>©Script'Enjøyer</h3>
         <h4>Lorem ipsum dolor sit amet consectetur.</h4>
@@ -92,6 +135,9 @@
     <script src="asset/titlescale.js"></script>
     <script src="asset/backgroundAnime.js"></script>
     <script src="asset/gsapTextAnim.js"></script>
+    <script src="asset/article.js"></script>
+    <!-- ↓↓↓modalejs↓↓↓ -->
+    <script src="asset/modal.js"></script>
 </body>
 
 </html>

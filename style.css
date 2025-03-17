@@ -71,9 +71,9 @@ body {
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-evenly;
-  background: url("images/mountainOne.png") no-repeat 50% 20%;
-  background-size: 100%;
   overflow: hidden;
+  background: url("images/mountainOne.png") no-repeat 100% 50%;
+  background-size: contain;
 }
 article {
   height: auto;
@@ -91,48 +91,49 @@ figure {
   align-items: flex-end;
   justify-content: space-evenly;
 }
-figure > p {
+.textOne {
   padding: 10px;
-  height: auto;
+  height: 123vh;
   width: 100%;
-  color: rgba(255, 255, 255, 0.3);
-  background: #1a1a1ab0;
+  color: rgba(255, 255, 255, 0.5);
   font-family: "Red Hat Display", sans-serif;
-  font-size: 3rem;
+  font-size: 2.7rem;
   text-shadow: var(--textShadowblur);
   font-weight: 500;
   letter-spacing: 5px;
   overflow: hidden;
+  background: #000 url("images/asiaFace.jpg") no-repeat 50% 50%;
+  background-size: auto;
 }
 picture {
   height: auto;
   width: 100%;
 }
 figure > #Pict1 > img {
-  /* margin-left: 25vw; */
-  top: 0;
   height: 30vh;
   width: 20vw;
+  mix-blend-mode: overlay;
 }
 figure > #Pict2 > img {
-  /* margin-left: 25vw; */
   height: 70vh;
   width: 30vw;
+  mix-blend-mode: overlay;
 }
 /*Galerie image*/
 #imgContainer {
+  margin: auto;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-end;
   justify-content: space-between;
   position: relative;
-  height: 70vh;
+  height: 66vh;
   width: 100%;
-  background: url("images/dragonTwo.png") no-repeat;
+  background: url("images/carp.png") no-repeat;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
-#imgContainer > p {
+.textTwo {
   padding-bottom: 5px;
   height: 5.5vh;
   width: auto;
@@ -142,23 +143,25 @@ figure > #Pict2 > img {
   font-size: 3rem;
   text-shadow: var(--textShadowblur);
   font-weight: 500;
-  letter-spacing: 5px;
+  letter-spacing: 3.5px;
   overflow: hidden;
 }
 #imgContainer > img {
+  margin: 0;
   height: 25vh;
   width: 25vw;
 }
 #imgSubContainer {
+  margin-top: 26.4vh;
   position: absolute;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-evenly;
-  height: 70vh;
+  height: 40vh;
   width: 100%;
   background: var(--background);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 #imgSubContainer > img {
   height: 15vh;
@@ -168,9 +171,172 @@ figure > #Pict2 > img {
   filter: contrast(140%);
   box-shadow: var(--ombreElement);
 }
+/***************************************Modal image *************************************************************/
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/* le Modal background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal Contenue (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+  font-family: var(--asia);
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+/***************************************Modal image fin*************************************************************/
 /*Galerie image fin*/
+/*Section 3*/
+
+.wrapper,
+.article__S3,
+.article__fig {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: var(--standard);
+  margin: auto;
+}
+
+.article__S3 {
+  margin-top: 10px;
+  padding: 10px;
+  height: auto;
+  width: 50vw;
+  flex-flow: row nowrap;
+  background: url("images/asiaFace3.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  text-shadow: var(--textShadowblur);
+  color: rgba(255, 255, 255, 0.5);
+}
+.article__titre--container {
+  padding: 0;
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+.article__titre--container > h4 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  letter-spacing: 5px;
+}
+.article__titre--container > h4 > span {
+  font-size: 5rem;
+}
+.article__titre--container > h5 {
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+.article__txt {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.article__txt > p {
+  line-height: 25px;
+}
+.article__txt > p > strong {
+  text-decoration: underline;
+}
+.article__txt > p > cite {
+  font-weight: 800;
+}
+.article__fig {
+  height: auto;
+  width: 100%;
+  flex-flow: column nowrap;
+}
+.article__fig > img {
+  height: 25vh;
+  width: auto;
+  border-radius: 5%;
+}
+.article__fig > figcaption {
+  filter: drop-shadow(0px 0px 3px #000);
+  text-align: center;
+}
+
+/*Section 3 fin*/
 /*footer*/
 footer {
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
